@@ -8,6 +8,7 @@
       "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-red-300: oklch(80.8% 0.114 19.571);
     --color-red-900: oklch(39.6% 0.141 25.723);
     --color-red-950: oklch(25.8% 0.092 26.042);
     --color-amber-50: oklch(98.7% 0.022 95.277);
@@ -32,6 +33,7 @@
     --color-green-700: oklch(52.7% 0.154 150.069);
     --color-green-800: oklch(44.8% 0.119 151.328);
     --color-green-900: oklch(39.3% 0.095 152.535);
+    --color-green-950: oklch(26.6% 0.065 152.934);
     --color-blue-50: oklch(97% 0.014 254.604);
     --color-blue-100: oklch(93.2% 0.032 255.585);
     --color-blue-200: oklch(88.2% 0.059 254.128);
@@ -204,6 +206,51 @@
   }
 }
 @layer utilities {
+  .absolute {
+    position: absolute;
+  }
+  .fixed {
+    position: fixed;
+  }
+  .relative {
+    position: relative;
+  }
+  .inset-20 {
+    inset: calc(var(--spacing) * 20);
+  }
+  .inset-30 {
+    inset: calc(var(--spacing) * 30);
+  }
+  .inset-40 {
+    inset: calc(var(--spacing) * 40);
+  }
+  .inset-50 {
+    inset: calc(var(--spacing) * 50);
+  }
+  .inset-60 {
+    inset: calc(var(--spacing) * 60);
+  }
+  .inset-80 {
+    inset: calc(var(--spacing) * 80);
+  }
+  .inset-150 {
+    inset: calc(var(--spacing) * 150);
+  }
+  .top-0 {
+    top: 0px;
+  }
+  .right-0 {
+    right: 0px;
+  }
+  .bottom-0 {
+    bottom: 0px;
+  }
+  .left-0 {
+    left: 0px;
+  }
+  .z-20 {
+    z-index: 20;
+  }
   .m-0 {
     margin: 0px;
   }
@@ -238,6 +285,10 @@
     width: calc(var(--spacing) * 20);
     height: calc(var(--spacing) * 20);
   }
+  .size-30 {
+    width: calc(var(--spacing) * 30);
+    height: calc(var(--spacing) * 30);
+  }
   .size-50 {
     width: calc(var(--spacing) * 50);
     height: calc(var(--spacing) * 50);
@@ -245,6 +296,22 @@
   .size-60 {
     width: calc(var(--spacing) * 60);
     height: calc(var(--spacing) * 60);
+  }
+  .size-96 {
+    width: calc(var(--spacing) * 96);
+    height: calc(var(--spacing) * 96);
+  }
+  .size-100 {
+    width: calc(var(--spacing) * 100);
+    height: calc(var(--spacing) * 100);
+  }
+  .size-150 {
+    width: calc(var(--spacing) * 150);
+    height: calc(var(--spacing) * 150);
+  }
+  .size-200 {
+    width: calc(var(--spacing) * 200);
+    height: calc(var(--spacing) * 200);
   }
   .size-full {
     width: 100%;
@@ -354,8 +421,17 @@
   .bg-blue-200 {
     background-color: var(--color-blue-200);
   }
+  .bg-blue-300 {
+    background-color: var(--color-blue-300);
+  }
   .bg-blue-500 {
     background-color: var(--color-blue-500);
+  }
+  .bg-blue-600 {
+    background-color: var(--color-blue-600);
+  }
+  .bg-blue-950 {
+    background-color: var(--color-blue-950);
   }
   .bg-green-50 {
     background-color: var(--color-green-50);
@@ -387,11 +463,17 @@
   .bg-green-900 {
     background-color: var(--color-green-900);
   }
+  .bg-green-950 {
+    background-color: var(--color-green-950);
+  }
   .bg-pink-200 {
     background-color: var(--color-pink-200);
   }
   .bg-pink-600 {
     background-color: var(--color-pink-600);
+  }
+  .bg-red-300 {
+    background-color: var(--color-red-300);
   }
   .bg-red-900 {
     background-color: var(--color-red-900);
