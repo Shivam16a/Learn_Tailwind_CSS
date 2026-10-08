@@ -69,3 +69,7 @@ Example: relative, absolute, fixed, sticky
   Content
 </div>
 ```
+```
+<div class="gradient bg-gradient-to-t to-green-500 from-red-500 size-50">
+</div>
+```
