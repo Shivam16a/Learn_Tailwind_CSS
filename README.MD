@@ -73,3 +73,26 @@ Example: relative, absolute, fixed, sticky
 <div class="gradient bg-gradient-to-t to-green-500 from-red-500 size-50">
 </div>
 ```
+
+## Filters in Tailwind CSS
+
+Definition: Filters in Tailwind CSS are utility classes used to apply visual effects to elements, such as blur, brightness, contrast, grayscale, and shadows.
+
+Common filter classes:
+
+- `blur-sm` – Adds a slight blur.
+- `brightness-150` – Increases brightness.
+- `contrast-125` – Increases contrast.
+- `grayscale` – Converts colors to grayscale.
+- `invert` – Inverts colors.
+- `sepia` – Adds a sepia effect.
+
+Example:
+
+```
+<img src="image.jpg" class="blur-sm" alt="Example">
+<img src="image.jpg" class="grayscale" alt="Example">
+<img src="image.jpg" class="brightness-150" alt="Example">
+```
+
+Conclusion: Tailwind CSS filter utilities make it easy to add visual effects without writing custom CSS.
